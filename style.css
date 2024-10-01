@@ -247,4 +247,5 @@ header {
 }
 .playAgainButton:hover {
     transform: translateY(-5px);
+    
 }
