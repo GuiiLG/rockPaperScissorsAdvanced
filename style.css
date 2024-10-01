@@ -39,6 +39,8 @@ header {
     text-align: center;
     font-weight: bold;
 }
+
+/* CONTAINER */
 .container {
     margin: auto;
     margin-top: 50px;
@@ -105,8 +107,144 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 10px;
+    margin-top: 50px;
 
 }
 .rulesButton:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+}
+
+/* MODAL RULES WINDOW */
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    
+}
+.rulesModalDiv {
+    
+    background-color: white;
+    margin-top: 40px;
+    z-index: 9999;
+    width: 30% ;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px 10px 80px 10px;
+    margin-top: 50px;
+    
+}
+
+.imgRules {
+    margin: auto;
+    text-align: center;
+    
+}
+.imgReal {
+    width: 100%;
+    height: auto;
+}
+.close {
+    display: flex;
+    justify-content: space-between;
+}
+.imgClose {
+    display: block;
+    text-align: right;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Result */
+
+.resultMainDiv {
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    
+}
+.picked {
+    font-weight: bold;
+    font-size: 20px;
+}
+.whoPicked {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0 45px;
+}
+.resultDiv {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.youPicked {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: white;
+}
+.housePicked {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: white;
+}
+.scissorsResult {
+    border: 20px solid hsl(40, 84%, 53%);
+    background-image: url('images/icon-scissors.svg');
+    background-size: 70px; /* To cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+}
+.spockResult {
+    border: 20px solid hsl(189, 59%, 53%);
+    background-image: url('images/icon-spock.svg');
+    background-size: 70px; /* To cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+
+}
+.paperResult {
+    border: 20px solid hsl(230, 89%, 62%);
+    background-image: url('images/icon-paper.svg');
+    background-size: 70px; /* To cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+
+}
+.rockResult {
+    border: 20px solid hsl(349, 71%, 52%);
+    background-image: url('images/icon-rock.svg');
+    background-size: 70px; /* To cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+
+}
+.lizardResult { 
+    border: 20px solid hsl(261, 73%, 60%);
+    background-image: url('images/icon-lizard.svg');
+    background-size: 70px; /* To cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+
+}
+.playAgainDiv {
+    text-align: center;
+}
+.playAgainButton {
+    background-color: white;
+    color: hsl(214, 47%, 23%);
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+.playAgainButton:hover {
+    transform: translateY(-5px);
 }
