@@ -20,11 +20,12 @@ class RulesModal{
         this.rulesModalDiv.innerHTML = `
             <div class="rulesModalDiv">
                 <div class="close">
-                <div>4</div>
-                    <img  class="imgClose" src="images/icon-close.svg" alt="">
-                </div>
-                <div class="imgRules">
-                    <img class="imgReal" src="images/image-rules-bonus.svg"  alt="">
+                    <div>4</div>
+                        <img  class="imgClose" src="images/icon-close.svg" alt="">
+                    </div>
+                    <div class="imgRules">
+                        <img class="imgReal" src="images/image-rules-bonus.svg"  alt="">
+                    </div>
                 </div>
             </div>
         `

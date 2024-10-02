@@ -11,6 +11,8 @@ body {
     height: 100vh;
     background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
+
+/* HEADER SECTION */
 header {
     display: flex;
     justify-content: space-between;
@@ -98,6 +100,8 @@ header {
     top: -10px;
     
 }
+
+/* RULES SECTION */
 .rulesButton {
     background-color: rgba(240, 248, 255, 0);
     padding: 10px 30px 10px 30px;
@@ -133,8 +137,8 @@ header {
     width: 30% ;
     border-radius: 10px;
     margin: auto;
-    padding: 20px 10px 80px 10px;
-    margin-top: 50px;
+    padding: 20px 30px 80px 30px;
+    margin-top: 5%;
     
 }
 
@@ -158,7 +162,7 @@ header {
     cursor: pointer;
 }
 
-/* Result */
+/* RESULT SECTION  */
 
 .resultMainDiv {
     margin: auto;
@@ -248,4 +252,142 @@ header {
 .playAgainButton:hover {
     transform: translateY(-5px);
     
+}
+
+/* RESPONSIVE SECTION  */
+@media (max-width: 1000px){
+    .rulesModalDiv {
+        width: 40%;
+        margin-top: 90px;
+    }
+    .resultMainDiv {
+        width: 70%;
+    }
+    header {
+        width: 80%;
+    }
+    
+    
+}
+@media (max-width: 840px) {
+    .resultMainDiv {
+        width: 80%;
+    }
+}
+@media (max-width: 768px){
+    .rulesModalDiv {
+        width: 60%;
+    }
+    
+    .itemsName {
+        font-size: 20px;
+        align-items: center;
+    }
+    .container {
+        width: 300px;
+        background-size: 200px;
+    }
+    .scissors {
+        top: 0px;
+        left: 35%;
+        border: 10px solid hsl(40, 84%, 53%);
+        
+        
+    }
+    .spock {
+        border: 10px solid hsl(189, 59%, 53%);
+        top: 70px;
+        left: -30%;
+    }
+    .paper {
+        border: 10px solid hsl(230, 89%, 62%);
+        left: 5%;
+        top: 70px;
+    }
+    .lizard {
+        border: 10px solid hsl(261, 73%, 60%) ;
+        top: 110px;
+        left: 10%;
+    }
+    .rock {
+        border: 10px solid hsl(349, 71%, 52%);
+        left: 25%;
+        top:110px;
+        
+    }
+    .options{
+        height: 90px;
+        width: 90px;
+    }
+    .optionsImg {
+        height: 30px;
+    }
+    .winOrLoseText{
+        font-size: 20px;
+    }
+    .youPicked {
+        height: 150px;
+        width: 150px;
+        border-width: 15px;
+        background-size: 50px;
+        
+        
+    }
+    .housePicked {
+        height: 150px;
+        width: 150px;
+        border-width: 15px;
+        background-size: 50px;
+        
+    }
+    .whoPicked {
+        padding: 0 0px 0 25px;
+    }
+    .playAgainButton {
+        padding: 10px 30px 10px 30px;
+    }
+    
+    .rulesButton {
+        margin: auto;
+        margin-top: 20px ;
+    }
+}
+@media (max-width: 680px){
+    .rulesModalDiv {
+        width: 70%;
+        margin-top: 80px;
+        
+    }
+    header{
+        width: 90%;
+    }
+    .scoreDiv {
+        padding: 10px 20px 10px 20px;
+    }
+
+    
+}
+@media (max-width: 560px){
+    .resultDiv {
+        width: 100%;
+    }
+    .youPicked {
+        height: 120px;
+        width: 120px;
+        border-width: 10px;
+        background-size: 50px;
+        
+        
+    }
+    .housePicked {
+        height: 120px;
+        width: 120px;
+        border-width: 10px;
+        background-size: 50px;
+        
+    }
+    .playAgainButton {
+        padding: 10px 20px 10px 20px;
+        margin: 20px 20px 0 20px;
+    }
 }
